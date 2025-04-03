@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Vehicles | Elite Motors</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Elite</span> Motors</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="new-vehicles.html">New Vehicles</a></li>
+                    <li><a href="pre-owned.html">Pre-Owned</a></li>
+                    <li><a href="parts.html">Parts & Accessories</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="page-header">
+        <div class="container">
+            <h1>New Vehicles</h1>
+            <p>Discover our latest models with cutting-edge technology</p>
+        </div>
+    </section>
+
+    <section id="inventory-filter">
+        <div class="container">
+            <form id="filter-form">
+                <div class="filter-group">
+                    <label for="make">Make:</label>
+                    <select id="make" name="make">
+                        <option value="all">All Makes</option>
+                        <option value="mercedes">Mercedes-Benz</option>
+                        <option value="bmw">BMW</option>
+                        <option value="audi">Audi</option>
+                        <option value="porsche">Porsche</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="model">Model:</label>
+                    <select id="model" name="model">
+                        <option value="all">All Models</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price">Price Range:</label>
+                    <select id="price" name="price">
+                        <option value="all">All Prices</option>
+                        <option value="0-50000">Under $50,000</option>
+                        <option value="50000-100000">$50,000 - $100,000</option>
+                        <option value="100000">Over $100,000</option>
+                    </select>
+                </div>
+                <button type="submit" class="button_1">Filter</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="inventory">
+        <div class="container">
+            <div class="vehicle-grid">
+                <div class="vehicle-card">
+                    <img src="images/new1.jpg" alt="2023 Mercedes-Benz S-Class">
+                    <h3>2023 Mercedes-Benz S-Class</h3>
+                    <p class="price">$111,000</p>
+                    <p class="specs">V8, 4.0L, 496 HP</p>
+                    <a href="#" class="button_1">View Details</a>
+                </div>
+                <div class="vehicle-card">
+                    <img src="images/new2.jpg" alt="2023 BMW 7 Series">
+                    <h3>2023 BMW 7 Series</h3>
+                    <p class="price">$86,800</p>
+                    <p class="specs">Inline 6, 3.0L, 375 HP</p>
+                    <a href="#" class="button_1">View Details</a>
+                </div>
+                <div class="vehicle-card">
+                    <img src="images/new3.jpg" alt="2023 Audi A8">
+                    <h3>2023 Audi A8</h3>
+                    <p class="price">$97,500</p>
+                    <p class="specs">V6, 3.0L, 335 HP</p>
+                    <a href="#" class="button_1">View Details</a>
+                </div>
+                <div class="vehicle-card">
+                    <img src="images/new4.jpg" alt="2023 Porsche Taycan">
+                    <h3>2023 Porsche Taycan</h3>
+                    <p class="price">$129,900</p>
+                    <p class="specs">Electric, 402 HP</p>
+                    <a href="#" class="button_1">View Details</a>
+                </div>
+                <div class="vehicle-card">
+                    <img src="images/new5.jpg" alt="2023 Mercedes-Benz GLE">
+                    <h3>2023 Mercedes-Benz GLE</h3>
+                    <p class="price">$78,950</p>
+                    <p class="specs">V6, 3.0L, 362 HP</p>
+                    <a href="#" class="button_1">View Details</a>
+                </div>
+                <div class="vehicle-card">
+                    <img src="images/new6.jpg" alt="2023 BMW X7">
+                    <h3>2023 BMW X7</h3>
+                    <p class="price">$92,400</p>
+                    <p class="specs">V8, 4.4L, 523 HP</p>
+                    <a href="#" class="button_1">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="test-drive">
+        <div class="container">
+            <h2>Schedule a Test Drive</h2>
+            <p>Experience the performance and luxury firsthand</p>
+            <a href="contact.html" class="button_1">Contact Us</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Elite Motors &copy; 2023</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
