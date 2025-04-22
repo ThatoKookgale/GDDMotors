@@ -3,149 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pre-Owned Vehicles | Elite Motors</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Pre-Owned Vehicles - GDD Motors</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <div id="branding">
-                <h1><span class="highlight">Elite</span> Motors</h1>
-            </div>
-             <nav>
-                    <a href="index.html">Home</a> |
-                    <a href="new-vehicles.html">New Vehicles</a> |
-                    <a href="pre-owned.html">Pre-Owned</a> |
-                    <a href="parts.html">Parts & Accessories</a> |
-                    <a href="about.html">About</a> |
-                    <a href="contact.html">Contact</a> 
-            </nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="GDD Motors Logo" width="200" height="80">
         </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="new-vehicles.html">New Vehicles</a></li>
+                <li><a href="pre-owned.html">Pre-Owned</a></li>
+                <li><a href="parts.html">Parts</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="page-header">
-        <div class="container">
-            <h1>Pre-Owned Vehicles</h1>
-            <p>Quality certified vehicles with rigorous inspections</p>
-        </div>
-    </section>
-
-    <section id="certified-info">
-        <div class="container">
-            <h2>Elite Certified Pre-Owned</h2>
-            <p>Every Elite Certified vehicle undergoes a 160-point inspection and comes with:</p>
-            <ul>
-                <li><i class="fas fa-check-circle"></i> Comprehensive warranty</li>
-                <li><i class="fas fa-check-circle"></i> Vehicle history report</li>
-                <li><i class="fas fa-check-circle"></i> 24/7 roadside assistance</li>
-                <li><i class="fas fa-check-circle"></i> Complimentary maintenance</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="inventory-filter">
-        <div class="container">
-            <form id="filter-form">
-                <div class="filter-group">
-                    <label for="make">Make:</label>
-                    <select id="make" name="make">
-                        <option value="all">All Makes</option>
-                        <option value="mercedes">Mercedes-Benz</option>
-                        <option value="bmw">BMW</option>
-                        <option value="audi">Audi</option>
-                        <option value="porsche">Porsche</option>
-                    </select>
-                </div>
-                <div class="filter-group">
-                    <label for="year">Year:</label>
-                    <select id="year" name="year">
-                        <option value="all">All Years</option>
-                        <option value="2023">2023</option>
-                        <option value="2022">2022</option>
-                        <option value="2021">2021</option>
-                        <option value="2020">2020</option>
-                    </select>
-                </div>
-                <div class="filter-group">
-                    <label for="price">Price Range:</label>
-                    <select id="price" name="price">
-                        <option value="all">All Prices</option>
-                        <option value="0-30000">Under $30,000</option>
-                        <option value="30000-60000">$30,000 - $60,000</option>
-                        <option value="60000">Over $60,000</option>
-                    </select>
-                </div>
-                <button type="submit" class="button_1">Filter</button>
-            </form>
-        </div>
-    </section>
-
-    <section id="inventory">
-        <div class="container">
-            <div class="vehicle-grid">
-                <div class="vehicle-card">
-                    <img src="images/used1.jpg" alt="2021 Mercedes-Benz E-Class">
-                    <div class="certified-badge">Certified</div>
-                    <h3>2021 Mercedes-Benz E-Class</h3>
-                    <p class="price">$42,800</p>
-                    <p class="specs">18,500 miles, V6, 3.0L</p>
-                    <a href="#" class="button_1">View Details</a>
-                </div>
-                <div class="vehicle-card">
-                    <img src="images/used2.jpg" alt="2020 BMW 5 Series">
-                    <div class="certified-badge">Certified</div>
-                    <h3>2020 BMW 5 Series</h3>
-                    <p class="price">$38,900</p>
-                    <p class="specs">22,100 miles, Inline 6, 3.0L</p>
-                    <a href="#" class="button_1">View Details</a>
-                </div>
-                <div class="vehicle-card">
-                    <img src="images/used3.jpg" alt="2022 Audi Q7">
-                    <div class="certified-badge">Certified</div>
-                    <h3>2022 Audi Q7</h3>
-                    <p class="price">$51,200</p>
-                    <p class="specs">12,800 miles, V6, 3.0L</p>
-                    <a href="#" class="button_1">View Details</a>
-                </div>
-                <div class="vehicle-card">
-                    <img src="images/used4.jpg" alt="2019 Porsche Macan">
-                    <h3>2019 Porsche Macan</h3>
-                    <p class="price">$45,500</p>
-                    <p class="specs">34,200 miles, V6, 3.0L</p>
-                    <a href="#" class="button_1">View Details</a>
-                </div>
-                <div class="vehicle-card">
-                    <img src="images/used5.jpg" alt="2020 Mercedes-Benz GLC">
-                    <div class="certified-badge">Certified</div>
-                    <h3>2020 Mercedes-Benz GLC</h3>
-                    <p class="price">$36,750</p>
-                    <p class="specs">28,900 miles, Inline 4, 2.0L</p>
-                    <a href="#" class="button_1">View Details</a>
-                </div>
-                <div class="vehicle-card">
-                    <img src="images/used6.jpg" alt="2021 BMW X5">
-                    <div class="certified-badge">Certified</div>
-                    <h3>2021 BMW X5</h3>
-                    <p class="price">$54,300</p>
-                    <p class="specs">19,200 miles, Inline 6, 3.0L</p>
-                    <a href="#" class="button_1">View Details</a>
-                </div>
+    <main>
+        <h1>Quality Pre-Owned Vehicles</h1>
+        
+        <div class="filter-section">
+            <h2>Filter by Price Range</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-price="all">All Vehicles</button>
+                <button class="filter-btn" data-price="under15">Under $15,000</button>
+                <button class="filter-btn" data-price="15to30">$15,000 - $30,000</button>
+                <button class="filter-btn" data-price="over30">Over $30,000</button>
             </div>
         </div>
-    </section>
 
-    <section id="value-trade">
-        <div class="container">
-            <h2>Get Your Trade-In Value</h2>
-            <p>We offer competitive prices for your current vehicle</p>
-            <a href="contact.html" class="button_1">Get an Estimate</a>
+        <div class="vehicle-grid">
+            <div class="vehicle-card" data-price="under15">
+                <img src="images/used1.jpg" alt="2018 Compact Sedan" width="300" height="200">
+                <h3>2018 Compact Sedan</h3>
+                <p>Price: $12,999</p>
+                <p>Mileage: 45,000 miles</p>
+                <p>Fuel Economy: 30 MPG City / 38 MPG Highway</p>
+                <button class="inquiry-btn">Schedule Test Drive</button>
+            </div>
+
+            <div class="vehicle-card" data-price="15to30">
+                <img src="images/used2.jpg" alt="2020 Luxury SUV" width="300" height="200">
+                <h3>2020 Luxury SUV</h3>
+                <p>Price: $24,999</p>
+                <p>Mileage: 32,000 miles</p>
+                <p>Fuel Economy: 20 MPG City / 26 MPG Highway</p>
+                <button class="inquiry-btn">Schedule Test Drive</button>
+            </div>
+
+            <div class="vehicle-card" data-price="over30">
+                <img src="images/used3.jpg" alt="2022 Premium Truck" width="300" height="200">
+                <h3>2022 Premium Truck</h3>
+                <p>Price: $34,999</p>
+                <p>Mileage: 18,000 miles</p>
+                <p>Fuel Economy: 17 MPG City / 22 MPG Highway</p>
+                <button class="inquiry-btn">Schedule Test Drive</button>
+            </div>
+
+            <!-- More pre-owned vehicles can be added here -->
         </div>
-    </section>
+
+        <div class="certified-section">
+            <h2>Certified Pre-Owned Program</h2>
+            <p>All our certified pre-owned vehicles undergo a rigorous 150-point inspection and come with extended warranty coverage.</p>
+            <button class="learn-more-btn">Learn More</button>
+        </div>
+    </main>
 
     <footer>
-        <p>Elite Motors &copy; 2023</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="new-vehicles.html">New Vehicles</a></li>
+                    <li><a href="pre-owned.html">Pre-Owned</a></li>
+                    <li><a href="parts.html">Parts</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>123 Auto Mall Drive</p>
+                <p>City, State 12345</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 GDD Motors. All rights reserved.</p>
+        </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
