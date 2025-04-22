@@ -3,133 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parts & Accessories | Elite Motors</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Parts & Accessories - GDD Motors</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <div id="branding">
-                <h1><span class="highlight">Elite</span> Motors</h1>
-            </div>
-             <nav>
-                    <a href="index.html">Home</a> |
-                    <a href="new-vehicles.html">New Vehicles</a> |
-                    <a href="pre-owned.html">Pre-Owned</a> |
-                    <a href="parts.html">Parts & Accessories</a> |
-                    <a href="about.html">About</a> |
-                    <a href="contact.html">Contact</a> 
-            </nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="GDD Motors Logo" width="200" height="80">
         </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="new-vehicles.html">New Vehicles</a></li>
+                <li><a href="pre-owned.html">Pre-Owned</a></li>
+                <li><a href="parts.html">Parts</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="page-header">
-        <div class="container">
-            <h1>Parts & Accessories</h1>
-            <p>Genuine parts and premium accessories for your vehicle</p>
-        </div>
-    </section>
+    <main>
+        <h1>Genuine Parts & Accessories</h1>
+        
+        <div class="parts-categories">
+            <div class="category-card">
+                <img src="images/performance.jpg" alt="Performance Parts" width="250" height="150">
+                <h2>Performance Parts</h2>
+                <p>Upgrade your vehicle with our high-performance parts</p>
+                <button class="shop-btn">Shop Now</button>
+            </div>
 
-    <section id="parts-categories">
-        <div class="container">
-            <div class="category-grid">
-                <div class="category-card">
-                    <img src="images/parts1.jpg" alt="Genuine Parts">
-                    <h3>Genuine Parts</h3>
-                    <p>Manufacturer-approved parts for optimal performance</p>
-                    <a href="#" class="button_1">Browse Parts</a>
-                </div>
-                <div class="category-card">
-                    <img src="images/parts2.jpg" alt="Performance Upgrades">
-                    <h3>Performance Upgrades</h3>
-                    <p>Enhance your vehicle's capabilities</p>
-                    <a href="#" class="button_1">Browse Upgrades</a>
-                </div>
-                <div class="category-card">
-                    <img src="images/parts3.jpg" alt="Accessories">
-                    <h3>Accessories</h3>
-                    <p>Personalize and protect your vehicle</p>
-                    <a href="#" class="button_1">Browse Accessories</a>
-                </div>
+            <div class="category-card">
+                <img src="images/maintenance.jpg" alt="Maintenance Parts" width="250" height="150">
+                <h2>Maintenance Parts</h2>
+                <p>Keep your vehicle running smoothly with OEM parts</p>
+                <button class="shop-btn">Shop Now</button>
+            </div>
+
+            <div class="category-card">
+                <img src="images/accessories.jpg" alt="Accessories" width="250" height="150">
+                <h2>Accessories</h2>
+                <p>Personalize and protect your vehicle</p>
+                <button class="shop-btn">Shop Now</button>
             </div>
         </div>
-    </section>
 
-    <section id="parts-search">
-        <div class="container">
-            <h2>Find Parts for Your Vehicle</h2>
-            <form id="parts-form">
-                <div class="form-group">
-                    <label for="parts-make">Make:</label>
-                    <select id="parts-make" name="parts-make">
-                        <option value="">Select Make</option>
-                        <option value="mercedes">Mercedes-Benz</option>
-                        <option value="bmw">BMW</option>
-                        <option value="audi">Audi</option>
-                        <option value="porsche">Porsche</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="parts-model">Model:</label>
-                    <select id="parts-model" name="parts-model">
-                        <option value="">Select Model</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="parts-year">Year:</label>
-                    <select id="parts-year" name="parts-year">
-                        <option value="">Select Year</option>
-                    </select>
-                </div>
-                <button type="submit" class="button_1">Search Parts</button>
-            </form>
-        </div>
-    </section>
-
-    <section id="featured-parts">
-        <div class="container">
+        <div class="featured-products">
             <h2>Featured Products</h2>
-            <div class="parts-grid">
-                <div class="part-card">
-                    <img src="images/part1.jpg" alt="All-Weather Floor Mats">
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/oil-filter.jpg" alt="Premium Oil Filter" width="200" height="150">
+                    <h3>Premium Oil Filter</h3>
+                    <p class="price">$24.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/floor-mats.jpg" alt="All-Weather Floor Mats" width="200" height="150">
                     <h3>All-Weather Floor Mats</h3>
+                    <p class="price">$89.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/brake-pads.jpg" alt="Ceramic Brake Pads" width="200" height="150">
+                    <h3>Ceramic Brake Pads</h3>
                     <p class="price">$129.99</p>
-                    <a href="#" class="button_1">Add to Cart</a>
-                </div>
-                <div class="part-card">
-                    <img src="images/part2.jpg" alt="Performance Brake Kit">
-                    <h3>Performance Brake Kit</h3>
-                    <p class="price">$899.99</p>
-                    <a href="#" class="button_1">Add to Cart</a>
-                </div>
-                <div class="part-card">
-                    <img src="images/part3.jpg" alt="LED Interior Lighting">
-                    <h3>LED Interior Lighting</h3>
-                    <p class="price">$79.99</p>
-                    <a href="#" class="button_1">Add to Cart</a>
-                </div>
-                <div class="part-card">
-                    <img src="images/part4.jpg" alt="Roof Rack System">
-                    <h3>Roof Rack System</h3>
-                    <p class="price">$349.99</p>
-                    <a href="#" class="button_1">Add to Cart</a>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
             </div>
         </div>
-    </section>
 
-    <section id="service-appointment">
-        <div class="container">
-            <h2>Need Installation Help?</h2>
-            <p>Our certified technicians can install any part or accessory</p>
-            <a href="contact.html" class="button_1">Schedule Service</a>
+        <div class="parts-services">
+            <h2>Parts Services</h2>
+            <ul>
+                <li>Genuine OEM parts for all makes and models</li>
+                <li>Competitive pricing with online specials</li>
+                <li>Fast shipping available</li>
+                <li>In-store pickup option</li>
+                <li>Expert advice from our parts specialists</li>
+            </ul>
         </div>
-    </section>
+    </main>
 
     <footer>
-        <p>Elite Motors &copy; 2023</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="new-vehicles.html">New Vehicles</a></li>
+                    <li><a href="pre-owned.html">Pre-Owned</a></li>
+                    <li><a href="parts.html">Parts</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>123 Auto Mall Drive</p>
+                <p>City, State 12345</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 GDD Motors. All rights reserved.</p>
+        </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
