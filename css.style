@@ -1,0 +1,156 @@
+/* Basic Reset - Makes browsers behave consistently */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes padding not add to total width */
+}
+
+/* Body Styles - Applies to whole page */
+body {
+    font-family: Arial, sans-serif; /* Simple, readable font */
+    line-height: 1.6; /* Space between lines */
+    color: black; /* Default text color */
+    background-color: white; /* Page background */
+}
+
+/* Header Styles - Top section with logo and navigation */
+header {
+    background-color: blue; /* Blue background */
+    padding: 1rem; /* Space inside header */
+    display: flex; /* Puts logo and nav side by side */
+    justify-content: space-between; /* Spaces items evenly */
+    align-items: center; /* Centers vertically */
+}
+
+header img {
+    height: 60px; /* Fixed logo height */
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none; /* Removes bullet points */
+    display: flex; /* Makes menu horizontal */
+    gap: 1rem; /* Space between menu items */
+}
+
+nav a {
+    color: white; /* White text for links */
+    text-decoration: none; /* No underline */
+    padding: 0.5rem; /* Clickable area around links */
+}
+
+nav a:hover {
+    color: red; /* Red on hover */
+}
+
+/* Main Content Area */
+main {
+    padding: 2rem; /* Space around content */
+    max-width: 1200px; /* Limits width on large screens */
+    margin: 0 auto; /* Centers content */
+}
+
+/* Vehicle Cards - Used on New/Pre-Owned pages */
+.vehicle-card {
+    border: 2px solid blue; /* Blue border */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.vehicle-card img {
+    width: 100%; /* Makes image fill container */
+    height: auto; /* Keeps proportions */
+    border-bottom: 2px solid blue; /* Blue line under image */
+    margin-bottom: 1rem;
+}
+
+/* Buttons - Used throughout site */
+button, .btn {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    cursor: pointer; /* Changes cursor to hand */
+}
+
+button:hover, .btn:hover {
+    background-color: red; /* Changes to red on hover */
+}
+
+/* Footer Styles - Bottom section */
+footer {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: red;
+}
+
+/* Contact Form Styles */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block; /* Makes label go above input */
+    margin-bottom: 0.5rem;
+    color: blue;
+}
+
+.form-group input, 
+.form-group textarea, 
+.form-group select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid blue;
+}
+
+/* Simple Grid for Vehicle Listings */
+.vehicle-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+/* Responsive Design - Changes layout on small screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stacks logo and nav */
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .vehicle-grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+}
+
+/* Utility Classes - Can be used anywhere */
+.text-center {
+    text-align: center;
+}
+
+.text-red {
+    color: red;
+}
+
+.bg-blue {
+    background-color: blue;
+    color: white;
+}
+
+.border-red {
+    border: 2px solid red;
+}
