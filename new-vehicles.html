@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDD Motors - Premium Vehicles</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <p>🚗 Special Financing Offers Available | <a href="financing.html">Learn More</a></p>
+    </div>
+
+    <!-- Main Header with Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Logos/freepik-modern-carepair-car-service-logo-20250429104319V8Un.png" alt="GDD Motors Logo">
+                </a>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="new-vehicles.html" class="nav-link">New Vehicles <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="new-vehicles.html#sedans">Sedans</a>
+                            <a href="new-vehicles.html#suvs">SUVs</a>
+                            <a href="new-vehicles.html#pickup">Pickup</a>
+                            <a href="new-vehicles.html#sport">Sport</a>
+                            <a href="new-vehicles.html#hatch-back">Hatch-Back</a>
+                            <a href="new-vehicles.html#elctric-vehicles">Electric Vehicles</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="pre-owned.html" class="nav-link">Pre-Owned <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="pre-owned.html#certified">Certified Pre-Owned</a>
+                            <a href="pre-owned.html#under15">Under BWP150,000</a>
+                            <a href="pre-owned.html#luxury">Luxury Vehicles</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="parts.html" class="nav-link">Parts & Service</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header CTAs -->
+            <div class="header-actions">
+                <a href="tel:+26776260739" class="header-phone">
+                    <i class="fas fa-phone"></i> +267 76 260 739
+                </a>
+                <a href="contact.html" class="cta-button">Schedule Service</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation (hidden by default) -->
+    <nav class="mobile-nav">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li class="mobile-dropdown">
+                <a href="new-vehicles.html">New Vehicles <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="new-vehicles.html#sedans">Sedans</a></li>
+                    <li><a href="new-vehicles.html#suvs">SUVs</a></li>
+                    <li><a href="new-vehicles.html#off-road">Off-Road</a></li>
+                    <li><a href="new-vehicles.html#hatch-back">Hatch-Back</a></li>
+                    <li><a href="new-vehicles.html#sport">Sport</a></li>
+                    <li><a href="new-vehicles.html#electric-vehicle">Electric Vehicle</a></li>
+                </ul>
+            </li>
+            <li class="mobile-dropdown">
+                <a href="pre-owned.html">Pre-Owned <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="pre-owned.html#certified">Certified</a></li>
+                    <li><a href="pre-owned.html#under15">Under BWP150K</a></li>
+                    <li><a href="pre-owned.html#luxury">Luxury</a></li>
+                </ul>
+            </li>
+            <li><a href="parts.html">Parts & Service</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+        <h1>New Vehicles Inventory</h1>
+        
+        <div class="filter-section">
+            <h2>Filter by Category</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">All Vehicles</button>
+                <button class="filter-btn" data-category="sport">Sport</button>
+                <button class="filter-btn" data-category="suv">SUVs</button>
+                <button class="filter-btn" data-category="off-road">Off-Road</button>
+                <button class="filter-btn" data-category="sedan">Sedan</button>
+                <button class="filter-btn" data-category="hatch-back">Hatch-Back</button>
+                <button class="filter-btn" data-category="electric-vehicle">Electric Vehicle</button>
+            </div>
+        </div>
+
+        <div class="vehicle-grid">
+            <div class="vehicle-card" data-category="sedan">
+                <img src="Pictures/New Vehicles/BMW/bmw-m340i-xdrive-sedan-flyout-new.webp" alt="2025 BMW m340i Sedan" width="300" height="200">
+                <h3>2025 BMW m340i </h3>
+                <p>Starting at BWP309,999</p>
+                <p>4.8L Petrol V8 Engine</p>
+                <p>Mileage 50,000km</p>
+                <p>Leather seats</p>
+                <p>Silver</p>
+            </div>
+
+            <div class="vehicle-card" data-category="sport">
+                <img src="Pictures/New Vehicles/Ford/2025_ford_mustang_coupe_dark-horse_fq_oem_1_1280.avif" alt="2025 Ford Mustang" width="300" height="200">
+                <h3>2025 Ford Mustang</h3>
+                <p>Starting at BWP599,999</p>
+                <p>5.0L V8 Engine</p>
+                <p>Mileage 36,000km</p>
+                <p>Leather seats and interior</p>
+                <p>Royal Blue</p>
+            </div>
+
+            <div class="vehicle-card" data-category="electric-vehicle">
+                <img src="Pictures/New Vehicles/BMW/bmw-i7-electric-luxury-sedan.jpg" alt="2025 BMW i7" width="300" height="200">
+                <h3>2025 BMW i7</h3>
+                <p>Starting at BWP799,999</p>
+                <p>Electric Vehicle</p>
+                <p>Mileage 12,000km</p>
+                <p>Leather interior</p>
+                <p>Ceramic</p>
+            </div>
+
+            <div class="vehicle-card" data-category="off-road">
+                <img src="Pictures/New Vehicles/Ford/Ford ranger raptor 2019.avif" alt="2019 Ford Ranger Raptor" width="300" height="200">
+                <h3>2019 Ford Ranger Raptor</h3>
+                <p>Starting at BWP450,999</p>
+                <p>2.0L Diesel Engine</p>
+                <p>Mileage 50,000km</p>
+                <p>Leather seats</p>
+                <p>Black</p>
+                <button class="inquiry-btn">Request Info</button>
+            </div>
+            
+            <div class="vehicle-card" data-category="electric-vehicle">
+                <img src="Pictures/New Vehicles/BMW/bmw-i7-.jpg" alt="2024 BMW i7" width="300" height="200">
+                <h3>2024 BMW i7</h3>
+                <p>Starting at BWP799,999</p>
+                <p>Electric Vehicle</p>
+                <p>Mileage 12,000km</p>
+                <p>Leather interior</p>
+                <p>Black</p>
+                <button class="inquiry-btn">Request Info</button>
+            </div>
+
+            <div class="vehicle-card" data-category="suv">
+                <img src="Pictures/New Vehicles/BMW/034796ed2969c6d74ae8f1c14d440049x.avif" alt="2024 BMW X7" width="300" height="200">
+                <h3>2024 BMW X7</h3>
+                <p>Starting at BWP1,299,999</p>
+                <p>4.4L V8 Engine</p>
+                <p>Mileage 10,000km</p>
+                <p>Leather seats</p>
+                <p>Black</p>
+                <button class="inquiry-btn">Request Info</button>
+            </div>
+
+            <div class="vehicle-card" data-catergory="sport">
+                <img src="Pictures/New Vehicles/Audi/H4sIAAAAAAAA_1vzloG1tIiBOTrayfuvpGh6-m1zJgaGigIGBgZGoDhTtNOaz-I_2DhCHsCEtzEwF-SlMwJZKUycmbmJ6an6QD4_I3taTmV-aUkxO0grj-CTDIcJ_yxYxLXMUuSLIjM_fJzoxsAK1MXoBiSY9wAJvm1AglOaAUyCzJsKInpAfCYHZgYG1gogI5IBBPj4SotyChKLEnP1yjN.png" alt="2020 Audi RS 7 " width="300" height="200">
+                <h3>2020 Audi RS 7</h3>
+                <p>Starting at BWP699,999</p>
+                <p>3.0L Twin Turbo Engine</p>
+                <p>Mileage 30,000km</p>
+                <p>Leather seats</p>
+                <p>White</p>
+                <button class="inquiry-btn">Request Info</button>
+            </div>
+
+            <div class="vehicle-card" data-catergory="suv">
+                <img src="Pictures/New Vehicles/JEEP/jeep-wrangler-review-2024-01-cornering-front.webp" alt="2024 Jeep Wrangler" width="300" height="200">
+                <h3>2024 Jeep Wrangler</h3>
+                <p>Starting at BWP599,999</p>
+                <p>3.6L V6 Engine</p>
+                <p>Mileage 15,000km</p>
+               <button class="inquiry-btn">Request Info</button>
+            </div>
+
+            <div class="vehicle-card" data-category="electric-vehicle">
+                <img src="Pictures/New Vehicles/Ford/2024_ford_f-150-lightning_crew-cab-pickup_flash_fq_oem_1_1600.avif" alt="2024 Ford F-150 Lightning" width="300" height="200">
+                <h3>2024 Ford F-150 Lightning</h3>
+                <p>Starting at BWP799,999</p>
+                <p>Electric Vehicle</p>
+                <p>Mileage 5,000km</p>
+                <p>Leather seats</p>
+                <p>Grey</p>
+                <button class="inquiry-btn">Request Info</button>  
+            </div>
+            
+            <div class="vehicle-card" data-catergory="sport">
+                <img src="Pictures/New Vehicles/BMW/bmw-m4-cs-flyout.webp" alt="BMW M4 CS" width="300" height="200">
+                <h3>BMW M4 CS</h3>
+                <p>Starting at BWP799,999</p>
+                <p>3.0L I6 Engine</p>
+                <p>Mileage 8,000km</p>
+                <p>Leather seats and carbon fibre interior</p>
+                <p>Green</p>
+                <button class="inquiry-btn">Request Info</button>
+            </div>
+
+            <div class="vehicle-card" data-catergory="off-road">
+                <img src="Pictures/New Vehicles/RAM/2024-ram-1500-trx-final-edition-101-64f0da2fac867.jpeg" alt="2024 RAM 1500 trx" width="300" height="200">
+                <h3>2024 RAM 1500 trx</h3>
+                <p>Starting at BWP799,999</p>
+                <p>6.2L V8 Engine</p>
+                <p>Mileage 5,000km</p>
+                <p>Blue</p>
+                <button class="inquiry-btn">Request Info</button>
+            </div>
+
+            <div class="vehicle-card" data-catergory="sport">
+                <img src="Pictures/New Vehicles/Ford/Ford-Mustang-Exterior-126883.webp" alt="2019 Ford Mustang" width="300" height="200">
+                <h3>2019 Ford Mustang</h3>
+                <p>Starting at BWP599,999</p>
+                <p>5.0L V8 Engine</p>
+                <p>Mileage 36,000km</p>
+                <p>Leather seats and interior</p>
+                <p>Red</p>
+                <button class="inquiry-btn">Request Info</button>   
+            </div>
+
+            <div class="vehicle-card" data-catergory="hatch-back">
+                <img src="Pictures/New Vehicles/Volks Wagon/images (4).jpeg" alt="2024 Volks Wagon Golf" width="300" height="200">
+                <h3>2024 Volks Wagon Golf</h3>
+                <p>Starting at BWP299,999</p>
+                <p>2.0L I4 Engine</p>
+                <p>Mileage 20,000km</p>
+                <p>Leather seats</p>
+                <p>Black</p>
+                <button class="inquiry-btn">Request Info</button>
+            </div>
+
+            <div class="vehicle-card" data-catergory="suv">
+                <img src="Pictures/New Vehicles/JEEP/2022-jeep-grand-cherokeefrontjpg.jpg" alt="2022 Jeep Grand Cherokee" width="300" height="200">
+                <h3>2022 Jeep Grand Cherokee</h3>
+                <p>Starting at BWP699,999</p>
+                <p>3.6L V6 Engine</p>
+                <p>Mileage 55,000km</p>
+                <p>Leather seats</p>
+                <p>White</p>
+                <button class="inquiry-btn">Request Info</button>
+            </div>
+                
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="new-vehicles.html">New Vehicles</a></li>
+                    <li><a href="pre-owned.html">Pre-Owned</a></li>
+                    <li><a href="parts.html">Parts</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Broadhurst Industrial</p>
+                <p>Gaborone, Botswana</p>
+                <p>Phone: +267 76 260 739</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 GDD Motors. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
