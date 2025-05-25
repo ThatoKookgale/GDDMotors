@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDD Motors - Premium Vehicles</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <p>🚗 Special Financing Offers Available | <a href="financing.html">Learn More</a></p>
+    </div>
+
+    <!-- Main Header with Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Logos/freepik-modern-carepair-car-service-logo-20250429104319V8Un.png" alt="GDD Motors Logo">
+                </a>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="new-vehicles.html" class="nav-link">New Vehicles <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="new-vehicles.html#sedans">Sedans</a>
+                            <a href="new-vehicles.html#suvs">SUVs</a>
+                            <a href="new-vehicles.html#trucks">Trucks</a>
+                            <a href="new-vehicles.html#electric">Electric Vehicles</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="pre-owned.html" class="nav-link">Pre-Owned <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="pre-owned.html#certified">Certified Pre-Owned</a>
+                            <a href="pre-owned.html#under15">Under BWP150,000</a>
+                            <a href="pre-owned.html#luxury">Luxury Vehicles</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="parts.html" class="nav-link">Parts & Service</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header CTAs -->
+            <div class="header-actions">
+                <a href="tel:+26776260739" class="header-phone">
+                    <i class="fas fa-phone"></i> +267 76 260 739
+                </a>
+                <a href="contact.html" class="cta-button">Schedule Service</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation (hidden by default) -->
+    <nav class="mobile-nav">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li class="mobile-dropdown">
+                <a href="new-vehicles.html">New Vehicles <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="new-vehicles.html#sedans">Sedans</a></li>
+                    <li><a href="new-vehicles.html#suvs">SUVs</a></li>
+                    <li><a href="new-vehicles.html#trucks">Trucks</a></li>
+                    <li><a href="new-vehicles.html#electric">Electric</a></li>
+                </ul>
+            </li>
+            <li class="mobile-dropdown">
+                <a href="pre-owned.html">Pre-Owned <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="pre-owned.html#certified">Certified</a></li>
+                    <li><a href="pre-owned.html#under15">Under BWP150K</a></li>
+                    <li><a href="pre-owned.html#luxury">Luxury</a></li>
+                </ul>
+            </li>
+            <li><a href="parts.html">Parts & Service</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+        <h1>Quality Pre-Owned Vehicles</h1>
+        
+        <div class="filter-section">
+            <h2>Filter by Price Range</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-price="all">All Vehicles</button>
+                <button class="filter-btn" data-price="under15">Under BWP 15,000</button>
+                <button class="filter-btn" data-price="15to30">BWP 15,000 - BWP 30,000</button>
+                <button class="filter-btn" data-price="over30">Over BWP 30,000</button>
+            </div>
+        </div>
+
+        <div class="vehicle-grid">
+            <div class="vehicle-card" data-price="under15">
+                <img src="images/used1.jpg" alt="2018 Compact Sedan" width="300" height="200">
+                <h3>2018 Compact Sedan</h3>
+                <p>Price: BWP350,999</p>
+                <p>Mileage: 45,000 miles</p>
+                <p>Fuel Economy: 30 MPG City / 38 MPG Highway</p>
+                <button class="inquiry-btn">Schedule Test Drive</button>
+            </div>
+
+            <div class="vehicle-card" data-price="15to30">
+                <img src="images/used2.jpg" alt="2020 Luxury SUV" width="300" height="200">
+                <h3>2020 Luxury SUV</h3>
+                <p>Price: BWP 470,999</p>
+                <p>Mileage: 32,000 miles</p>
+                <p>Fuel Economy: 20 MPG City / 26 MPG Highway</p>
+                <button class="inquiry-btn">Schedule Test Drive</button>
+            </div>
+
+            <div class="vehicle-card" data-price="over30">
+                <img src="images/used3.jpg" alt="2022 Premium Truck" width="300" height="200">
+                <h3>2022 Premium Truck</h3>
+                <p>Price: BWP </p>
+                <p>Mileage: 18,000 miles</p>
+                <p>Fuel Economy: 17 MPG City / 22 MPG Highway</p>
+                <button class="inquiry-btn">Schedule Test Drive</button>
+            </div>
+
+            <!-- More pre-owned vehicles can be added here -->
+        </div>
+
+        <div class="certified-section">
+            <h2>Certified Pre-Owned Program</h2>
+            <p>All our certified pre-owned vehicles undergo a rigorous 150-point inspection and come with extended warranty coverage.</p>
+            <button class="learn-more-btn">Learn More</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="new-vehicles.html">New Vehicles</a></li>
+                    <li><a href="pre-owned.html">Pre-Owned</a></li>
+                    <li><a href="parts.html">Parts</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Broadhurst Industrial</p>
+                <p>Gaborone, Botswana</p>
+                <p>Phone: +267 76 260 739</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 GDD Motors. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
