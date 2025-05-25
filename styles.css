@@ -1,3 +1,775 @@
+.announcement-bar {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.announcement-bar a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Main Header */
+.main-header {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+/* Logo */
+.logo img {
+    height: 60px;
+    transition: all 0.3s ease;
+}
+
+/* Main Navigation */
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.nav-link:hover {
+    color: var(--accent-color);
+}
+
+.nav-link i {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu a {
+    color: var(--text-dark);
+    padding: 0.75rem 1rem;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+    transition: all 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f5f5f5;
+    color: var(--primary-color);
+    padding-left: 1.25rem;
+}
+
+/* Header Actions */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header-phone {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.header-phone:hover {
+    color: var(--accent-color);
+}
+
+.cta-button {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: white;
+    z-index: 1001;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+.mobile-nav.active {
+    left: 0;
+}
+
+.mobile-nav-list {
+    list-style: none;
+    padding: 1rem;
+}
+
+.mobile-nav-list a {
+    display: block;
+    padding: 1rem;
+    color: var(--text-dark);
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 600;
+}
+
+.mobile-dropdown > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-submenu {
+    list-style: none;
+    padding-left: 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.mobile-submenu.active {
+    max-height: 500px;
+}
+
+.mobile-submenu a {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+/* Overlay for mobile menu */
+.mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.mobile-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Sticky Header Effect */
+.main-header.scrolled {
+    background-color: rgba(0, 0, 0, 0.95);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.main-header.scrolled .logo img {
+    height: 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .main-nav, .header-actions {
+        display: none;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        padding: 1rem;
+    }
+    
+    .logo img {
+        height: 50px;
+    }
+    
+    .announcement-bar {
+        font-size: 0.8rem;
+        padding: 0.3rem;
+    }
+}
+
+/* Basic Reset - Makes browsers behave consistently */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes padding not add to total width */
+}
+
+/* Color Variables */
+:root {
+    --primary-color: #d71010;
+    --secondary-color: #0a2240;
+    --accent-color: #f8c017;
+    --text-light: #ffffff;
+    --text-dark: #333333;
+    --transition-speed: 0.3s;
+    --nav-blue: rgb(16, 30, 189);
+}
+
+/* Body Styles - Applies to whole page */
+body {
+    font-family: Arial, sans-serif; /* Simple, readable font */
+    line-height: 1.6; /* Space between lines */
+    color: rgb(245, 240, 240); /* Default text color */
+    background-color: rgb(11, 9, 9); /* Page background */
+    background-image:url(bmw-i4-.jpg); /* Background image */
+    background-size: cover; /* Covers entire page */
+    background-repeat: no-repeat; /* No repeat */
+    background-attachment: fixed; /* Stays in place when scrolling */
+    background-blend-mode: overlay; /* Blends image with color */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+/* Video Header Styles (Optional - use if implementing video background) */
+.video-header {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    overflow: hidden;
+    color: var(--text-light);
+}
+
+#headerVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.header-content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+}
+
+/* Logo Styles */
+.logo img {
+    height: 100px;
+    width: 100px;
+    transition: all var(--transition-speed);
+}
+
+/* Main Navigation - Enhanced */
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+}
+
+.main-nav li {
+    position: relative;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.8rem 1rem;
+    transition: all var(--transition-speed);
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.main-nav a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: var(--accent-color);
+    transition: width var(--transition-speed);
+}
+
+.main-nav a:hover:after,
+.main-nav a.active:after {
+    width: 70%;
+}
+
+.main-nav a:hover {
+    color: var(--nav-blue);
+}
+
+/* CTA Button Styles */
+.header-cta {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.phone-link {
+    color: var(--text-light);
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color var(--transition-speed);
+}
+
+.phone-link:hover {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.phone-link i {
+    margin-right: 0.5rem;
+}
+
+.cta-button {
+    background: var(--accent-color);
+    color: var(--secondary-color);
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all var(--transition-speed);
+}
+
+.cta-button:hover {
+    background: var(--text-light);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Hero Text (For video header version) */
+.hero-text {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease-out 0.3s forwards;
+    opacity: 0;
+}
+
+.hero-button {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all var(--transition-speed);
+    animation: fadeInUp 1s ease-out 0.6s forwards;
+    opacity: 0;
+}
+
+.hero-button:hover {
+    background: var(--accent-color);
+    color: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Mobile Menu Toggle (hidden by default) */
+.mobile-menu-toggle {
+    display: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Main Content Area */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+}
+
+.parts-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: all var(--transition-speed);
+}
+.parts-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.parts-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.service-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: all var(--transition-speed);
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+/* Vehicle Cards - Used on New/Pre-Owned pages */
+.vehicle-card {
+    border: 2px solid rgb(10, 10, 11);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    background-color: rgba(137, 123, 123, 0.5);
+    transition: transform 0.3s;
+}
+
+.vehicle-card:hover {
+    transform: translateY(-5px);
+}
+
+.vehicle-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid blue;
+    margin-bottom: 1rem;
+}
+
+/* Vehicle Details - Used on individual vehicle pages */
+.vehicle-details {
+    display: flex;
+    gap: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 8px;
+}
+.vehicle-details img {
+    width: 50%;
+    height: auto;
+    border-radius: 4px;
+}
+.vehicle-details .details {
+    width: 50%;
+}
+.vehicle-details .details h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+.vehicle-details .details p {
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+/* Vehicle Features - List of features */
+.vehicle-features {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+.vehicle-features li {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0.5rem;
+    border-left: 3px solid var(--primary-color);
+}
+
+/* Vehicle Reviews - List of reviews */
+.vehicle-reviews {
+    list-style: none;
+    padding: 0;
+}
+.vehicle-reviews li {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-left: 3px solid var(--accent-color);
+}
+
+/* Buttons - Used throughout site */
+button, .btn {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all var(--transition-speed);
+}
+
+button:hover, .btn:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Footer Styles - Bottom section */
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: white;
+    transition: color var(--transition-speed);
+}
+
+footer a:hover {
+    color: var(--accent-color);
+}
+
+/* Contact Form Styles */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group textarea, 
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid var(--nav-blue);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 4px;
+    transition: all var(--transition-speed);
+}
+
+.form-group input:focus, 
+.form-group textarea:focus, 
+.form-group select:focus {
+    border-color: var(--accent-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(248, 192, 23, 0.3);
+}
+
+/* Simple Grid for Vehicle Listings */
+.vehicle-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design - Changes layout on small screens */
+@media (max-width: 992px) {
+    .main-nav {
+        display: none;
+    }
+    
+    .header-cta {
+        display: none;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-text p {
+        font-size: 1.2rem;
+    }
+    
+    .vehicle-details {
+        flex-direction: column;
+    }
+    
+    .vehicle-details img,
+    .vehicle-details .details {
+        width: 100%;
+    }
+    
+    .vehicle-features {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    
+    .vehicle-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Utility Classes - Can be used anywhere */
+.text-center {
+    text-align: center;
+}
+
+.text-red {
+    color: var(--primary-color);
+}
+
+.bg-blue {
+    background-color: var(--nav-blue);
+    color: white;
+}
+
+.border-red {
+    border: 2px solid var(--primary-color);
+}
+
+.mt-1 { margin-top: 1rem; }
+.mt-2 { margin-top: 2rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
 /* Add these new styles to your CSS file */
 
 /* Utility Bar */
