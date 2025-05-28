@@ -3,126 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GDD Motors - Premium Vehicles</title>
+    <title>GDD Motors - Premium Vehicles in Botswana</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-     <!-- Top Announcement Bar -->
-     <div class="announcement-bar">
-        <p>🚗 Special Financing Offers Available | <a href="financing.html">Learn More</a></p>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>🚗 Special Financing Offers Available | <a href="contact.html">Learn More</a></p>
     </div>
-    <!-- Header with Video Background -->
-    <header class="video-header">
-        <video autoplay muted loop id="headerVideo">
-            <source src="Videos/Home page slideshow.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-        </video>
-        <div class="header-overlay"></div>
-        
-        <div class="header-content">
+    
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="header-container">
             <div class="logo">
-                <img src="Logos/freepik-modern-carepair-car-service-logo-20250429104319V8Un.png" alt="GDD Motors Logo" width="220">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="GDD Motors Logo">
+                </a>
             </div>
-            
-           <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="new-vehicles.html">New Vehicles</a></li>
-                    <li><a href="pre-owned.html">Pre-Owned</a></li>
-                    <li><a href="parts.html">Parts</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="new-vehicles.html" class="nav-link">New Vehicles <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="new-vehicles.html#sedans">Sedans</a>
+                            <a href="new-vehicles.html#suvs">SUVs</a>
+                            <a href="new-vehicles.html#pickup">Pickup</a>
+                            <a href="new-vehicles.html#sport">Sport</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="pre-owned.html" class="nav-link">Pre-Owned <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="pre-owned.html#certified">Certified Pre-Owned</a>
+                            <a href="pre-owned.html#under15">Under BWP150,000</a>
+                            <a href="pre-owned.html#luxury">Luxury Vehicles</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="parts.html" class="nav-link">Parts & Service</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="feedback.html" class="nav-link">Feedback</a></li>
                 </ul>
             </nav>
-            
-            <div class="header-cta">
-                <a href="tel:+26776260739" class="phone-link">
-                    <i class="fas fa-phone"></i> (+267) 76 260 739
+
+            <div class="header-actions">
+                <a href="tel:+26776260739" class="header-phone">
+                    <i class="fas fa-phone"></i> +267 76 260 739
                 </a>
-                <a href="contact.html" class="cta-button">Schedule Test Drive</a>
-            </div> 
-            
-            <div class="mobile-menu-toggle">
-                <i class="fas fa-bars"></i>
+                <a href="contact.html" class="cta-button">Schedule Service</a>
             </div>
-        </div>
-        
-        <div class="hero-text">
-            <h1>Premium Vehicles. Exceptional Service.</h1>
-            <p>Discover your perfect ride at GDD Motors</p>
-            <a href="new-vehicles.html" class="hero-button">Browse Inventory</a>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <h1>Welcome to GDD Motors</h1>
-            <p>Your best selling and trusted source for high quality and best performing vehicles in Botswana</p>
-        </section>
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li class="mobile-dropdown">
+                <a href="new-vehicles.html">New Vehicles <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="new-vehicles.html#sedans">Sedans</a></li>
+                    <li><a href="new-vehicles.html#suvs">SUVs</a></li>
+                    <li><a href="new-vehicles.html#pickup">Pickup</a></li>
+                    <li><a href="new-vehicles.html#sport">Sport</a></li>
+                </ul>
+            </li>
+            <li class="mobile-dropdown">
+                <a href="pre-owned.html">Pre-Owned <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="pre-owned.html#certified">Certified</a></li>
+                    <li><a href="pre-owned.html#under15">Under BWP150K</a></li>
+                    <li><a href="pre-owned.html#luxury">Luxury</a></li>
+                </ul>
+            </li>
+            <li><a href="parts.html">Parts & Service</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
 
-        <section class="featured">
-            <h2>Featured Vehicles</h2>
-            <div class="vehicle-grid">
-                <div class="vehicle-card">
-                    <img src="Pictures/New Vehicles/Mercedez Benz/2025-Mercedes-Benz-G-Wagon.avif" alt="2025 Mercedes Benz G63" width="300" height="200">
-                    <h3>2025 Mercedes Benz G63</h3>
-                    <p>Starting at BWP1,500,000</p>
-                </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium Vehicles in Botswana</h1>
+            <p>Discover the perfect vehicle for your lifestyle at GDD Motors</p>
+            <a href="new-vehicles.html" class="hero-button">Browse Inventory</a>
+        </div>
+    </section>
+
+    <!-- Featured Vehicles -->
+    <section class="featured-vehicles">
+        <h2>Featured Vehicles</h2>
+        <div class="vehicle-grid">
+            <div class="vehicle-card">
+                <img src="images/featured1.jpg" alt="Toyota Hilux" width="300" height="200">
+                <h3>Toyota Hilux</h3>
+                <p>From BWP 350,000</p>
+                <a href="new-vehicles.html#pickup" class="btn">View Details</a>
             </div>
-        </section>
-
-        
-        <section class="services">
-            <h2>Our Services</h2>
-            <div class="service-grid">
-                <div class="service-card">
-                    <i class="fas fa-tools"></i>
-                    <h3>Vehicle Maintenance</h3>
-                    <p>Expert maintenance services to keep your vehicle running smoothly.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-car-crash"></i>
-                    <h3>Collision Repair</h3>
-                    <p>High-quality collision repair services to restore your vehicle's appearance.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-car-battery"></i>
-                    <h3>Battery Replacement</h3>
-                    <p>Fast and reliable battery replacement services for all vehicle makes and models.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-oil-can"></i>
-                    <h3>Oil Change</h3>
-                    <p>Quick and efficient oil change services to keep your engine healthy.</p>
-                </div>
+            <div class="vehicle-card">
+                <img src="images/featured2.jpg" alt="Ford Ranger" width="300" height="200">
+                <h3>Ford Ranger</h3>
+                <p>From BWP 320,000</p>
+                <a href="new-vehicles.html#pickup" class="btn">View Details</a>
             </div>
-        </section>
-    </main>
+            <div class="vehicle-card">
+                <img src="images/featured3.jpg" alt="Mercedes-Benz C-Class" width="300" height="200">
+                <h3>Mercedes-Benz C-Class</h3>
+                <p>From BWP 450,000</p>
+                <a href="new-vehicles.html#luxury" class="btn">View Details</a>
+            </div>
+        </div>
+    </section>
 
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <i class="fas fa-car"></i>
+                <h3>New Vehicles</h3>
+                <p>Latest models with full manufacturer warranty</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-car-side"></i>
+                <h3>Pre-Owned</h3>
+                <p>Quality certified used vehicles at great prices</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tools"></i>
+                <h3>Parts & Service</h3>
+                <p>Expert maintenance and genuine parts</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-hand-holding-usd"></i>
+                <h3>Financing</h3>
+                <p>Competitive financing options available</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <div class="footer-content">
+        <div class="footer-container">
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="new-vehicles.html">New Vehicles</a></li>
                     <li><a href="pre-owned.html">Pre-Owned</a></li>
-                    <li><a href="parts.html">Parts</a></li>
+                    <li><a href="parts.html">Parts & Service</a></li>
                 </ul>
-                
             </div>
             <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>Broadhurst Industrial</p>
-                <p>Gaborone, Botswana</p>
-                <p>Phone: +267 76 260 739</p>
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="about.html#team">Our Team</a></li>
+                    <li><a href="about.html#values">Our Values</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Plot 123, Gaborone, Botswana</p>
+                <p><i class="fas fa-phone"></i> +267 76 260 739</p>
+                <p><i class="fas fa-envelope"></i> info@gddmotors.co.bw</p>
+            </div>
+            <div class="footer-section">
+                <h3>Business Hours</h3>
+                <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                <p>Saturday: 9:00 AM - 2:00 PM</p>
+                <p>Sunday: Closed</p>
             </div>
         </div>
-        <div class="copyright">
-            <p>&copy; 2025 GDD Motors. All rights reserved.</p>
+        <div class="footer-bottom">
+            <p>&copy; 2025 GDD Motors. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
