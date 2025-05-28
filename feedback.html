@@ -8,15 +8,91 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header (same as index.html) -->
+<!-- Main Header with Navigation -->
     <header class="main-header">
-        <!-- Same header content as index.html -->
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Images/Black Modern Car Dealer Logo.png" alt="GDD Motors Logo">
+                </a>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="new-vehicles.html" class="nav-link">New Vehicles <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="new-vehicles.html#sedans">Sedans</a>
+                            <a href="new-vehicles.html#suvs">SUVs</a>
+                            <a href="new-vehicles.html#pickup">Pickup</a>
+                            <a href="new-vehicles.html#sport">Sport</a>
+                            <a href="new-vehicles.html#hatch-back">Hatch-Back</a>
+                            <a href="new-vehicles.html#elctric-vehicles">Electric Vehicles</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="pre-owned.html" class="nav-link">Pre-Owned <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="pre-owned.html#certified">Certified Pre-Owned</a>
+                            <a href="pre-owned.html#under15">Under BWP150,000</a>
+                            <a href="pre-owned.html#luxury">Luxury Vehicles</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="parts.html" class="nav-link">Parts & Service</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="feedback.html" class="nav-link">Feedback</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header CTAs -->
+            <div class="header-actions">
+                <a href="tel:+26776260739" class="header-phone">
+                    <i class="fas fa-phone"></i> +267 76 260 739
+                </a>
+                <a href="contact.html" class="cta-button">Schedule Service</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </header>
 
+    <!-- Mobile Navigation (hidden by default) -->
     <nav class="mobile-nav">
-        <!-- Same mobile nav content as index.html -->
+        <ul class="mobile-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li class="mobile-dropdown">
+                <a href="new-vehicles.html">New Vehicles <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="new-vehicles.html#sedans">Sedans</a></li>
+                    <li><a href="new-vehicles.html#suvs">SUVs</a></li>
+                    <li><a href="new-vehicles.html#off-road">Off-Road</a></li>
+                    <li><a href="new-vehicles.html#hatch-back">Hatch-Back</a></li>
+                    <li><a href="new-vehicles.html#sport">Sport</a></li>
+                    <li><a href="new-vehicles.html#electric-vehicle">Electric Vehicle</a></li>
+                </ul>
+            </li>
+            <li class="mobile-dropdown">
+                <a href="pre-owned.html">Pre-Owned <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="pre-owned.html#certified">Certified</a></li>
+                    <li><a href="pre-owned.html#under15">Under BWP150K</a></li>
+                    <li><a href="pre-owned.html#luxury">Luxury</a></li>
+                </ul>
+            </li>
+            <li><a href="parts.html">Parts & Service</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
     </nav>
-
+    </header>
     <main class="container">
         <h1>Customer Feedback</h1>
         
