@@ -1,5 +1,6 @@
+// script.js
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile Menu Toggle - Simplified version without dropdowns
+    // Mobile Menu Toggle
     const mobileToggle = document.querySelector('.mobile-menu-toggle');
     const mobileNav = document.querySelector('.mobile-nav');
     const mobileOverlay = document.createElement('div');
@@ -13,15 +14,27 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.classList.toggle('no-scroll');
     });
     
-    // Close mobile menu when clicking overlay or any nav link
+    // Close mobile menu when clicking overlay
     mobileOverlay.addEventListener('click', function() {
         mobileNav.classList.remove('active');
         mobileOverlay.classList.remove('active');
         document.body.classList.remove('no-scroll');
     });
     
-    // Close mobile menu when clicking any nav link
-    const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+    // Mobile dropdown functionality
+    const mobileDropdownToggles = document.querySelectorAll('.mobile-dropdown > a');
+    mobileDropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            const submenu = this.nextElementSibling;
+            submenu.classList.toggle('active');
+            this.querySelector('i').classList.toggle('fa-chevron-up');
+            this.querySelector('i').classList.toggle('fa-chevron-down');
+        });
+    });
+    
+    // Close mobile menu when clicking any nav link (except dropdown toggles)
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav a:not(.mobile-dropdown > a)');
     mobileNavLinks.forEach(link => {
         link.addEventListener('click', function() {
             mobileNav.classList.remove('active');
@@ -32,13 +45,19 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Sticky header effect
     const header = document.querySelector('.main-header');
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
+    if (header) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    }
+    
+    // Other existing functionality...
+    // (Keep your existing smooth scrolling, form validation, etc.)
+});
     
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
