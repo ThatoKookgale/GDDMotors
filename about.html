@@ -3,181 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GDD Motors - Premium Vehicles</title>
+    <title>About Us | GDD Motors</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Top Announcement Bar -->
-    <div class="announcement-bar">
-        <p>🚗 Special Financing Offers Available | <a href="financing.html">Learn More</a></p>
-    </div>
-
-    <!-- Main Header with Navigation -->
+    <!-- Header (same as index.html) -->
     <header class="main-header">
-        <div class="header-container">
-            <!-- Logo -->
-            <div class="logo">
-                <a href="index.html">
-                    <img src="Images/Black Modern Car Dealer Logo.png" alt="GDD Motors Logo">
-                </a>
-            </div>
-
-            <!-- Main Navigation -->
-            <nav class="main-nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item dropdown">
-                        <a href="new-vehicles.html" class="nav-link">New Vehicles <i class="fas fa-chevron-down"></i></a>
-                        <div class="dropdown-menu">
-                            <a href="new-vehicles.html#sedans">Sedans</a>
-                            <a href="new-vehicles.html#suvs">SUVs</a>
-                            <a href="new-vehicles.html#pickup">Pickup</a>
-                            <a href="new-vehicles.html#sport">Sport</a>
-                            <a href="new-vehicles.html#hatch-back">Hatch-Back</a>
-                            <a href="new-vehicles.html#elctric-vehicles">Electric Vehicles</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="pre-owned.html" class="nav-link">Pre-Owned <i class="fas fa-chevron-down"></i></a>
-                        <div class="dropdown-menu">
-                            <a href="pre-owned.html#certified">Certified Pre-Owned</a>
-                            <a href="pre-owned.html#under15">Under BWP150,000</a>
-                            <a href="pre-owned.html#luxury">Luxury Vehicles</a>
-                        </div>
-                    </li>
-                    <li class="nav-item"><a href="parts.html" class="nav-link">Parts & Service</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li class="nav-item"><a href="feedback.html" class="nav-link">Feedback</a></li>
-                </ul>
-            </nav>
-
-            <!-- Header CTAs -->
-            <div class="header-actions">
-                <a href="tel:+26776260739" class="header-phone">
-                    <i class="fas fa-phone"></i> +267 76 260 739
-                </a>
-                <a href="contact.html" class="cta-button">Schedule Service</a>
-            </div>
-
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-menu-toggle" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
+        <!-- Same header content as index.html -->
     </header>
 
-    <!-- Mobile Navigation (hidden by default) -->
     <nav class="mobile-nav">
-        <ul class="mobile-nav-list">
-            <li><a href="index.html">Home</a></li>
-            <li class="mobile-dropdown">
-                <a href="new-vehicles.html">New Vehicles <i class="fas fa-chevron-down"></i></a>
-                <ul class="mobile-submenu">
-                    <li><a href="new-vehicles.html#sedans">Sedans</a></li>
-                    <li><a href="new-vehicles.html#suvs">SUVs</a></li>
-                    <li><a href="new-vehicles.html#off-road">Off-Road</a></li>
-                    <li><a href="new-vehicles.html#hatch-back">Hatch-Back</a></li>
-                    <li><a href="new-vehicles.html#sport">Sport</a></li>
-                    <li><a href="new-vehicles.html#electric-vehicle">Electric Vehicle</a></li>
-                </ul>
-            </li>
-            <li class="mobile-dropdown">
-                <a href="pre-owned.html">Pre-Owned <i class="fas fa-chevron-down"></i></a>
-                <ul class="mobile-submenu">
-                    <li><a href="pre-owned.html#certified">Certified</a></li>
-                    <li><a href="pre-owned.html#under15">Under BWP150K</a></li>
-                    <li><a href="pre-owned.html#luxury">Luxury</a></li>
-                </ul>
-            </li>
-            <li><a href="parts.html">Parts & Service</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-        </ul>
+        <!-- Same mobile nav content as index.html -->
     </nav>
-    </header>
 
-    <main>
+    <main class="container">
         <h1>About GDD Motors</h1>
         
-        <section class="about-section">
+        <section class="about-intro">
+            <div class="intro-content">
+                <h2>Your Trusted Vehicle Partner in Botswana</h2>
+                <p>Founded in 2010, GDD Motors has grown to become one of Botswana's leading automotive dealerships, offering premium new and pre-owned vehicles along with exceptional after-sales service.</p>
+            </div>
+            <div class="intro-image">
+                <img src="images/showroom.jpg" alt="GDD Motors Showroom" width="500" height="300">
+            </div>
+        </section>
+
+        <section id="history" class="history-section">
             <h2>Our History</h2>
-            <p>GDD Motors has been serving the community for nearly 20 years, it was gounded on 2005. What started as a small family-owned car dealership has grown into one of the region's most trusted automotive retailers.</p>
-            <img src="images/dealership.jpg" alt="GDD Motors Dealership" width="600" height="400">
-        </section>
-
-        <section class="about-section">
-            <h2>Our Mission</h2>
-            <p>At GDD Motors, our mission is simple: to provide exceptional vehicles and service at fair prices. We believe in building lasting relationships with our customers based on trust and transparency.</p>
-        </section>
-
-        <section class="team-section">
-            <h2>Meet Our Team</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="images/ceo.jpg" alt="Thato Gaddafi Kookgale, CEO" width="150" height="150">
-                    <h3>Thato Gaddafi Kookgale</h3>
-                    <p>CEO & Founder</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2010</div>
+                    <div class="timeline-content">
+                        <h3>Foundation</h3>
+                        <p>GDD Motors was established in Gaborone with a small showroom and service center.</p>
+                    </div>
                 </div>
-                <div class="team-member">
-                    <img src="images/sales-manager.jpg" alt="Sarah Johnson, Sales Manager" width="150" height="150">
-                    <h3>Sarah Johnson</h3>
-                    <p>Sales Manager</p>
+                <div class="timeline-item">
+                    <div class="timeline-year">2014</div>
+                    <div class="timeline-content">
+                        <h3>Expansion</h3>
+                        <p>We expanded our operations to include a second location in Francistown.</p>
+                    </div>
                 </div>
-                <div class="team-member">
-                    <img src="images/service-manager.jpg" alt="Mike Brown, Service Manager" width="150" height="150">
-                    <h3>Mike Brown</h3>
-                    <p>Service Manager</p>
+                <div class="timeline-item">
+                    <div class="timeline-year">2018</div>
+                    <div class="timeline-content">
+                        <h3>Award Winning</h3>
+                        <p>Recognized as Botswana's "Dealership of the Year" by the Automotive Association.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-content">
+                        <h3>New Facilities</h3>
+                        <p>Opened our state-of-the-art service center with 15 service bays in Gaborone.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="values-section">
+        <section id="team" class="team-section">
+            <h2>Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="images/ceo.jpg" alt="David Gaborone, CEO" width="200" height="200">
+                    <h3>David Gaborone</h3>
+                    <p class="position">CEO & Founder</p>
+                    <p>With over 25 years in the automotive industry, David leads our company with vision and passion.</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/sales-manager.jpg" alt="Anna Serowe, Sales Manager" width="200" height="200">
+                    <h3>Anna Serowe</h3>
+                    <p class="position">Sales Manager</p>
+                    <p>Anna and her team ensure you find the perfect vehicle for your needs.</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/service-manager.jpg" alt="John Francistown, Service Manager" width="200" height="200">
+                    <h3>John Francistown</h3>
+                    <p class="position">Service Manager</p>
+                    <p>John oversees our certified technicians to provide top-quality service.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="values" class="values-section">
             <h2>Our Values</h2>
             <div class="values-grid">
                 <div class="value-card">
+                    <i class="fas fa-handshake"></i>
                     <h3>Integrity</h3>
-                    <p>We conduct all business with honesty and transparency.</p>
+                    <p>We conduct business with honesty and transparency.</p>
                 </div>
                 <div class="value-card">
-                    <h3>Customer Focus</h3>
-                    <p>Our customers are at the heart of everything we do.</p>
-                </div>
-                <div class="value-card">
+                    <i class="fas fa-star"></i>
                     <h3>Quality</h3>
-                    <p>We stand behind every vehicle and service we provide.</p>
+                    <p>Only the best vehicles and service for our customers.</p>
                 </div>
                 <div class="value-card">
-                    <h3>Community</h3>
-                    <p>We're proud to support and invest in our local community.</p>
+                    <i class="fas fa-users"></i>
+                    <h3>Customer Focus</h3>
+                    <p>Your satisfaction is our top priority.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Innovation</h3>
+                    <p>Continually improving our services and offerings.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <blockquote>
+                        "GDD Motors provided excellent service when I purchased my Toyota Hilux. Their after-sales support has been outstanding."
+                    </blockquote>
+                    <div class="author">
+                        <img src="images/customer1.jpg" alt="Michael K." width="80" height="80">
+                        <p>Michael K.</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <blockquote>
+                        "I've been servicing my vehicles at GDD Motors for years. Their technicians are knowledgeable and trustworthy."
+                    </blockquote>
+                    <div class="author">
+                        <img src="images/customer2.jpg" alt="Sarah M." width="80" height="80">
+                        <p>Sarah M.</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer (same as index.html) -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="new-vehicles.html">New Vehicles</a></li>
-                    <li><a href="pre-owned.html">Pre-Owned</a></li>
-                    <li><a href="parts.html">Parts</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>Broadhurst Industrial</p>
-                <p>Gaborone, Botswana</p>
-                <p>Phone: +267 76 260 739</p>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2025 GDD Motors. All rights reserved.</p>
-        </div>
+        <!-- Same footer content as index.html -->
     </footer>
 
     <script src="scripts.js"></script>
