@@ -107,10 +107,10 @@ img {
 .nav-link {
     color: white;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 300;
     font-size: 1rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     padding: 0.5rem 0;
     position: relative;
     transition: color var(--transition-speed);
