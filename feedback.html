@@ -1,193 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Feedback Form - Car Hub</title>
-  <style>
-    body {
-      background-image: url('Audi rs3.webp'); /* Use a subtle car-themed image */
-      background-size: cover;
-      background-position: center;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #fff;
-    }
-
-    nav.main-nav {
-      position: sticky;
-      top: 0;
-      background-color: #111;
-      z-index: 999;
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 40px;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      transition: color 0.3s ease-in-out;
-    }
-
-    nav ul li a:hover {
-      text-decoration: underline;
-      color: #ddd;
-    }
-
-    .form-container {
-      background-color: rgba(50, 50, 50, 0.75); /* Dark grey with transparency */;
-      padding: 30px;
-      max-width: 600px;
-      margin: 80px auto;
-      border-radius: 15px;
-      box-shadow: 0 0 20px #50C878;
-      animation: fadeIn 1s ease-in;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    h2 {
-      text-align: center;
-      color: #f8c301;
-    }
-
-    label {
-      font-weight: bold;
-      display: block;
-      margin-top: 15px;
-    }
-
-    input, select, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border-radius: 8px;
-      border: none;
-      background-color: #222;
-      color: #fff;
-    }
-
-    button {
-      margin-top: 20px;
-      padding: 12px 20px;
-      width: 100%;
-      background-color: #f8c301;
-      border: none;
-      border-radius: 10px;
-      font-size: 16px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    button:hover {
-      background-color: #d4a900;
-    }
-
-    .car-icon {
-      display: block;
-      text-align: center;
-      font-size: 50px;
-      margin-bottom: 10px;
-      color: #f8c301;
-    }
-
-    .thank-you {
-      display: none;
-      text-align: center;
-      font-size: 20px;
-      margin-top: 20px;
-      color: #0f0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | GDD Motors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-  
-  <nav class="main-nav">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="Catalogue.html">Catalogue</a></li>
-      <li><a href="About.html">About</a></li>
-      <li><a href="Contact.html">Contact</a></li>
-      <li><a href="Form.html">Feedback Page</a></li>
-    </ul>
-  </nav>
+    <!-- Header (same as index.html) -->
+    <header class="main-header">
+        <!-- Same header content as index.html -->
+    </header>
 
-  <div class="form-container">
-    <div class="car-icon">🚗</div>
-    <h2>Hermit Heaven Motors Feedback</h2>
-    <p style="text-align:center;">We value your thoughts! Let us know what we can do better.</p>
-    
-     <form id="feedbackForm" action="https://formsubmit.co/sherlynkwe7@gmail.com" method="POST" onsubmit="handleSubmit(event)">
-      <input type="hidden" name="_captcha" value="false">
+    <nav class="mobile-nav">
+        <!-- Same mobile nav content as index.html -->
+    </nav>
 
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
+    <main class="container">
+        <h1>Customer Feedback</h1>
+        
+        <section class="feedback-intro">
+            <p>We value your opinion! Please share your experience with GDD Motors to help us improve our services.</p>
+        </section>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+        <div class="feedback-container">
+            <div class="feedback-form">
+                <h2>Share Your Feedback</h2>
+                <form id="feedbackForm" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name*</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="service-type">Service Type*</label>
+                        <select id="service-type" name="service-type" required>
+                            <option value="">Select Service Type</option>
+                            <option value="sales">Vehicle Purchase</option>
+                            <option value="service">Vehicle Service</option>
+                            <option value="parts">Parts Purchase</option>
+                            <option value="general">General Experience</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Rating*</label>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1"><i class="fas fa-star"></i></label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments">Comments*</label>
+                        <textarea id="comments" name="comments" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="contact-me" name="contact-me">
+                        <label for="contact-me">Please contact me about my feedback</label>
+                    </div>
+                    <button type="submit" class="btn">Submit Feedback</button>
+                </form>
+            </div>
 
-      <label for="rating">Rating:</label>
-      <select id="rating" name="rating" required>
-        <option value="">Choose...</option>
-        <option value="5">★★★★★ - Excellent</option>
-        <option value="4">★★★★☆ - Very Good</option>
-        <option value="3">★★★☆☆ - Good</option>
-        <option value="2">★★☆☆☆ - Fair</option>
-        <option value="1">★☆☆☆☆ - Poor</option>
-      </select>
+            <div class="feedback-info">
+                <h2>Why Your Feedback Matters</h2>
+                <p>At GDD Motors, we're committed to continuous improvement. Your honest feedback helps us:</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Improve our customer service</li>
+                    <li><i class="fas fa-check-circle"></i> Enhance our vehicle selection</li>
+                    <li><i class="fas fa-check-circle"></i> Upgrade our service facilities</li>
+                    <li><i class="fas fa-check-circle"></i> Train our staff better</li>
+                </ul>
+                <div class="testimonial">
+                    <blockquote>
+                        "GDD Motors actually listened to my feedback and made changes to their service process. That's real customer care!"
+                    </blockquote>
+                    <p class="author">- Tshepo M., Regular Customer</p>
+                </div>
+            </div>
+        </div>
 
-      <label for="comments">Comments:</label>
-      <textarea id="comments" name="comments" placeholder="Tell us what you think..." required></textarea>
+        <section class="feedback-thankyou" id="thankYou" style="display:none;">
+            <div class="thankyou-content">
+                <i class="fas fa-check-circle"></i>
+                <h2>Thank You for Your Feedback!</h2>
+                <p>We appreciate you taking the time to share your experience with us. Your feedback is valuable in helping us improve our services.</p>
+                <a href="index.html" class="btn">Back to Home</a>
+            </div>
+        </section>
+    </main>
 
-      <button type="submit">🚀 Submit Feedback</button>
-    </form>
+    <!-- Footer (same as index.html) -->
+    <footer>
+        <!-- Same footer content as index.html -->
+    </footer>
 
-    <div class="thank-you" id="thankYouMsg">
-      ✅ Thank you for your feedback! Your response has been submitted.
-    </div>
-  </div>
-
-  <script>
-    function handleSubmit(event) {
-      event.preventDefault();
-      const form = document.getElementById("feedbackForm");
-      const thankYou = document.getElementById("thankYouMsg");
-
-      // Send form data using FormSubmit endpoint
-      fetch(form.action, {
-        method: "POST",
-        body: new FormData(form),
-        headers: {
-          'Accept': 'application/json'
-        }
-      }).then(response => {
-        if (response.ok) {
-          form.reset();
-          form.style.display = "none";
-          thankYou.style.display = "block";
-        } else {
-          alert("There was an error submitting the form. Please try again.");
-        }
-      }).catch(error => {
-        alert("Network error. Please try again.");
-      });
-    }
-  </script>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
