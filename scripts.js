@@ -58,34 +58,39 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Form validation for contact page
-    const contactForm = document.getElementById('feedbackForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            const name = document.getElementById('name');
-            const email = document.getElementById('email');
-            let isValid = true;
-            
-            if (name.value.trim() === '') {
-                name.style.borderColor = 'red';
-                isValid = false;
-            } else {
-                name.style.borderColor = '';
-            }
-            
-            if (email.value.trim() === '' || !email.value.includes('@')) {
-                email.style.borderColor = 'red';
-                isValid = false;
-            } else {
-                email.style.borderColor = '';
-            }
-            
-            if (!isValid) {
-                e.preventDefault();
-                alert('Please fill in all required fields correctly.');
-            }
-        });
-    }
+  // Form validation for contact page
+const contactForm = document.getElementById('feedbackForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        const name = document.getElementById('name');
+        const email = document.getElementById('email');
+        let isValid = true;
+        
+        if (name.value.trim() === '') {
+            name.style.borderColor = 'red';
+            isValid = false;
+        } else {
+            name.style.borderColor = '';
+        }
+        
+        if (email.value.trim() === '' || !email.value.includes('@')) {
+            email.style.borderColor = 'red';
+            isValid = false;
+        } else {
+            email.style.borderColor = '';
+        }
+        
+        if (!isValid) {
+            e.preventDefault();
+            alert('Please fill in all required fields correctly.');
+        } else {
+            // Form is valid - show thank you message
+            alert('Thank you for contacting us/for your feedback! We appreciate it.');
+            // Optional: You could also add code here to actually submit the form
+            // via AJAX or let the normal form submission proceed
+        }
+    });
+}
     
     // Vehicle filter functionality
     const filterButtons = document.querySelectorAll('.filter-btn');
