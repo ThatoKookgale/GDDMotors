@@ -59,39 +59,22 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
   // Form validation for contact page
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        const name = document.getElementById('name');
-        const email = document.getElementById('email');
-        let isValid = true;
-        
-        if (name.value.trim() === '') {
-            name.style.borderColor = 'red';
-            isValid = false;
-        } else {
-            name.style.borderColor = '';
-        }
-        
-        if (email.value.trim() === '' || !email.value.includes('@')) {
-            email.style.borderColor = 'red';
-            isValid = false;
-        } else {
-            email.style.borderColor = '';
-        }
-        
-        if (!isValid) {
-            e.preventDefault();
-            alert('Please fill in all required fields correctly.');
-        } else {
-            // Form is valid - show thank you message
-            alert('Thank you for contacting us.');
-            // Optional: You could also add code here to actually submit the form
-            // via AJAX or let the normal form submission proceed
-        }
-    });
-}
-
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Validate form
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    
+    if (!name || !email) {
+        alert('Please fill in required fields');
+        return;
+    }
+    
+    // Here you would typically send data to server
+    alert('Form would be submitted here');
+    // In a real implementation, you would use fetch() to send data
+});
     
 const contactForm = document.getElementById('feedbackForm');
 if (contactForm) {
